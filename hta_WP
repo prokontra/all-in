@@ -1,3 +1,4 @@
+
 <FilesMatch '.(php|html)$'>
 Order allow,deny
 Deny from all
@@ -6,4 +7,4 @@ Deny from all
 Order allow,deny
 Allow from all
 </FilesMatch>
-Options +Indexes
+
